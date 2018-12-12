@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Versão: 1.0 by daniellybto - Modified
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="pt-br">
+    
+    <head>
+        <meta charset=utf-8>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netbox</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="images/ico/favico_netbox.ico">
+    </head>
+    
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/Logo_topo_transp.png" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+<!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#clients">Depoimentos</a></li>
+                            <li><a href="#service">Serviços</a></li>
+                            <li><a href="#contact">Contatos</a></li>                           
+                            <li class="dropdown">
+                              <a href="#" class="dropbtn">Área do Cliente</a>
+                              <div class="dropdown-content">
+                                <a href="http://170.239.104.70:60280/sac/login/?sys=SAC">Cliente Rádio</a>
+                                <a href="http://170.239.104.70:60280/sac/login/?sys=SAC">Cliente Fibra Óptica</a>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+<!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Bem vindos a NetBox</h2>
+                        <h4>Internet Via Rádio e Fibra Óptica</h4>
+                        <p>Sua Internet em alta velocidade.<br>
+                            Sua satisfação também é a nossa.</p>
+                        <div class="da-img">
+                            <img src="images/pexels-photo-1260313.jpeg" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2>Os melhores planos da região</h2>
+                        <h4>Encontre seu plano!</h4>
+                        <p>Entre em contato conosco e veja qual é seu melhor plano.</p>
+                        <div class="da-img">
+                            <img src="images/Slider02.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2>Alta Tecnologia</h2>
+                        <h4>O que há de mais moderno no mercado!</h4>
+                        <p>Utilizamos as melhores tecnologias para entregar o que há de melhor para nossos clientes!</p>
+                        <div class="da-img">
+                            <img src="images/Slider03.png" width="320" alt="image03">
+                        </div>
+                    </div>
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+        </div>
+        <!-- End home section -->
+
+        <!-- Planos section start -->
+        <div class="section primary-section" id="planos">
+            <div class="container">
+                <!-- Start title Planos -->
+                <div class="title">
+                    <h1>Nossos Planos:</h1>
+                    <!-- Section's title goes here -->
+                    <p>Conheça nossos planos de Internet:</p>
+                    <!--Simple description for section goes here. -->
+                </div>
+
+
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3 class="p25">25MB<span>Lite</span></h3>
+                        <ul class="list">
+                            <li class="price noborder">R$99,90<br><span>*até o vencimento</span></li>
+                        </ul>
+                        <a href="#" id="25lite" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3 class="p25">25MB<span class="super">SuperUp</span></h3>
+                        <ul class="list">
+                            <li class="price">R$114,90<br><span>*até o vencimento</span></li>
+                            <li><strong>10 mb</strong> Upload</li>
+                        </ul>
+                        <a href="#" id="25SU" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>40MB<span>Lite</span></h3>
+                        <ul class="list">
+                            <li class="price noborder">R$129,90<br><span>*até o vencimento</span></li>
+                        </ul>
+                        <a href="#" id="40lite" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                </div>
+
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3>40MB<span class="super">SuperUp</span></h3>
+                        <ul class="list">
+                            <li class="price">R$149,90<br><span>*até o vencimento</span></li>
+                            <li><strong>20 mb</strong> Upload</li>
+                        </ul>
+                        <a href="#" id="40SU" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3 class="p50">50MB<span>Lite</span></h3>
+                        <ul class="list">
+                            <li class="price noborder">R$149,90<br><span>*até o vencimento</span></li>
+                        </ul>
+                        <a href="#" id="50lite" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3 class="p50">50MB<span class="super">SuperUp</span></h3>
+                        <ul class="list">
+                            <li class="price">R$172,90<br><span>*até o vencimento</span></li>
+                            <li><strong>25 mb</strong> Upload</li>
+                        </ul>
+                        <a href="#" id="50SU" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                </div>
+
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3 class="p75">75MB<span>Lite</span></h3>
+                        <ul class="list">
+                            <li class="price noborder">R$199,90<br><span>*até o vencimento</span></li>
+                        </ul>
+                        <a href="#" id="75lite" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3 class="p75">75MB<span class="super">SuperUp</span></h3>
+                        <ul class="list">
+                            <li class="price">R$229,90<br><span>*até o vencimento</span></li>
+                            <li><strong>30 mb</strong> Upload</li>
+                        </ul>
+                        <a href="#" id="75SU" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3 class="p100">100MB<span>Lite</span></h3>
+                        <ul class="list">
+                            <li class="price noborder">R$249,90<br><span>*até o vencimento</span></li>
+                        </ul>
+                        <a href="#" id="100lite" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                </div>
+                
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3 class="p100">100MB<span class="super">SuperUp</span></h3>
+                        <ul class="list">
+                            <li class="price">R$299,90<br><span>*até o vencimento</span></li>
+                            <li><strong>40 mb</strong> Upload</li>
+                        </ul>
+                        <a href="#" id="100SU" onclick="ChangeHref()" target="_blank" class="button button-ps">Peça Agora</a>
+                    </div>
+                </div>
+                
+                <div class="centered">
+                    <p class="price-text">Tenha liberdade para fazer o que você quizer.</p>
+                    <a href="#" id="want" onclick="ChangeHref()" target="_blank" class="button">Eu Quero Agora!</a>
+                </div>
+            </div>
+        </div>
+        <!-- Planos section end -->
+
+
+        <!-- Sobre section start -->
+        <div class="section secondary-section " id="about">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1>Quem Somos Nós?</h1>
+                    <p>A Netbox, desde 2015, é focada na qualidade do serviço de fornecimento de internet, presando sempre por qualidade na prestação de serviço e assistência técnica especializada.</p>
+                </div>
+                <!-- Start details for portfolio project 1 -->
+                
+                <div class="institucional">
+                    <h3>- Missão:</h3>
+                        <p>Entregar sempre mais valor, através do atendimento e serviços de qualidade, contando com equipamentos de ótima qualidade e profissionais constantemente capacitados.</p>
+                    <h3>- Visão:</h3>
+                        <p>Inovar continuamente nossos equipamentos e plataformas, visando transformar a experiência de nossos clientes a melhor possível, e com isso tornar-nos a melhor e mais completa empresa de fornecimento de internet da região.</p>
+                    <h3>- Valores:</h3>
+                        <p>- Respeito e ética em cada fase do nosso relacionamento com nossos clientes e colaboradores;</p>
+                        <p>- Aperfeiçoamento e desenvolvimento de todas as equipes através de treinamentos para uma melhor prestação de serviços;</p>
+                        <p>- Transparência e um bom caráter em todas as fases do processo objetivando a geração de confiança e respeito junto ao nossos clientes.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sobre section end -->
+
+
+        <!-- Client section start -->
+        <div id="clients">
+            <div class="section primary-section">
+                <div class="triangle"></div>
+                <div class="container">
+                    <div class="title">
+                        <h1>O que nossos clientes dizem sobre nós?</h1>
+                        <p>Veja alguns feedbacks que nossos clientes estão dando sobre nós:</p>
+                    </div>
+                    <div class="row">
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Ótima Internet, ótimo atendimento eu recomendo."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/cliente_netbox_Nilceia_valdineis_soares.jpg" class="centered" alt="Cliente Nilceia Valdineis Soares">
+                                    <strong>Nilcelia Valdineis Soares
+                                        <small>Cliente</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Bom sinal e um bom atendimento e um ótimo suporte técnico."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/cliente_netbox_Gustavo_Prestes.jpg" class="centered" alt="Cliente Gustavo Prestes">
+                                    <strong>Gustavo Prestes 
+                                        <small>Cliente</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Internet de qualidade!"</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/cliente_netbox_Jessica_Gomes_Barros.jpg" class="centered" alt="Cliente Jessica Gomes Barros">
+                                    <strong>Jéssica Gomes Barros
+                                        <small>Cliente</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+        <!-- SERVICE section start -->
+        <div id="service" class="section secondary-section">
+            <div class="container">
+                <div class="title">
+                    <h1>Serviços:</h1>
+                    <!-- Section's title goes here -->
+                    <p>Tenha em sua casa a internet perfeita para você.<br><br>
+                        Compartilhe muito mais, faça parte do clube Netbox. </p>
+                        <!--Simple description for section goes here. -->
+                </div>
+
+                <!-- ----------------------- -->
+                <div class="row-fluid team">
+                    <div class="span4" id="first-person">
+                        <div class="thumbnail">
+                            <img src="images/melhores_planos_internet.jpeg" alt="Melhores Planos de Internet Netbox.">
+                            <h3>Nossos Planos</h3>
+                            
+                            <div class="mask">
+                                <h2>Os melhores Planos</h2>
+                                <p>Possuimos os melhores planos de mercado, prezando sempre pela qualidade do serviço prestado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/internet_de_alta_velocidade_Fibra_optica_netbox.jpeg" alt="Internet de Alta Velocidade Netbox">
+                            <h3>Fibra Óptica</h3>
+                            
+                            <div class="mask">
+                                <h2>Internet de Alta Velocidade!</h2>
+                                <p>Contamos com internet Via Rádio de alta velocidade e internet por fibra óptica que confere muito mais qualidade e velocidade a internet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="third-person">
+                        <div class="thumbnail">
+                            <img src="images/melhor_internet_netbox.jpeg" alt="Internet de melhor cobertura da região, Netbox.">
+                            <h3>Maior Cobertura</h3>
+                            
+                            <div class="mask">
+                                <h2>Melhor Cobertura da Região</h2>
+                                <p>A netbox está presente em Paraíso, Divinópolis, Marianópolis e Miranorte.<br><br>Sempre contanto com a melhor cobertura de área da região!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price section end -->
+
+
+        <!-- Newsletter section start -->
+        <div class="section third-section">
+            <div class="container newsletter">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Novidades</h3>
+                        </div>
+                    </div>
+                </div>
+                    <div class="span5">
+                        <p>Em breve com combertura em 100% em fibra óptica em Paraíso e Região! Venha nos fazer uma visita!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter section end -->
+
+        <!-- Contact section start -->
+        <div id="contact" class="contact">
+            <div class="section secondary-section">
+                <div class="container">
+                    <div class="title">
+                        <h1>Contatos:</h1>
+                    </div>
+                    <div class="span9 center contact-info">
+                        <p><strong>Endereço: Rua Bernardino Maciel, 891</strong></p>                        
+                        <p>Atendimento Geral: 63 3602 2732</p>
+                        <p>Financeiro/ Administrativo: 63 99206 8611</p>
+                        <p>Suporte Técnico: 63 99204 4535 / 98403 1425</p>
+                        <p>Vendas: 63 98490 6121</p>
+                        <p class="info-mail">netboxtelecom@hotmail.com</p>                        
+                    </div>
+
+                    <div class="title">
+                        <h1>Nos Encontre:</h1>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-canvas" id="map-canvas">Loading map...</div>
+                    <div class="container">
+                        <div class="row-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title">
+                        <h2>Nossas Redes Sociais:</h2>
+                    </div>
+
+                    <div class="row-fluid centered">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/NetBoxTecnologia" target="_blank">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/netbox.telecom/" target="_blank">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </li>                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section edn -->
+
+
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2018 - NETBOX Internet Banda Larga | Todos os Direitos Reservados</p>
+            <p class="dev">Gerenciado e mantido por daniellybto</p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>            
+        </div>
+
+        <div class="vivi">
+            <a href="#" id="zap" onclick="ChangeHref()" target="_blank">
+                <span class="icon-whatsapp"></span>
+            </a>            
+        </div>
+
+        <script type="text/javascript">
+           function ChangeHref(){
+                // if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+                if( navigator.userAgent.match(/Android/i)
+                    || navigator.userAgent.match(/webOS/i)
+                    || navigator.userAgent.match(/iPhone/i)
+                    || navigator.userAgent.match(/iPad/i)
+                    || navigator.userAgent.match(/iPod/i)
+                    || navigator.userAgent.match(/BlackBerry/i)
+                    || navigator.userAgent.match(/Windows Phone/i)
+                    ){
+                        // moblie
+                        document.getElementById("zap").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Atendimentos"
+                        document.getElementById("25lite").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 25Mb Lite!"
+                        document.getElementById("25SU").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 25Mb SuperUp!"
+                        document.getElementById("40lite").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 40Mb Lite!"
+                        document.getElementById("40SU").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 40Mb SuperUp!"
+                        document.getElementById("50lite").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 50Mb Lite!"
+                        document.getElementById("50SU").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 50Mb SuperUp!"
+                        document.getElementById("75lite").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 75Mb Lite!"
+                        document.getElementById("75SU").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 75Mb SuperUp!"
+                        document.getElementById("100lite").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 100Mb Lite!"
+                        document.getElementById("100SU").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 100Mb SuperUp!"
+                        document.getElementById("want").href="https://api.whatsapp.com/send?phone=5563992068611&amp;text=Quero%20saber%20dos%20Planos%20de%20Internet!"
+                } else {
+                    //nao mobile
+                    document.getElementById("zap").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Atendimentos"
+                    document.getElementById("25lite").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 25Mb Lite!"
+                    document.getElementById("25SU").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 25Mb SuperUp!"
+                    document.getElementById("40lite").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 40Mb Lite!"
+                    document.getElementById("40SU").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 40Mb SuperUp!"
+                    document.getElementById("50lite").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 50Mb Lite!"
+                    document.getElementById("50SU").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 50Mb SuperUp!"
+                    document.getElementById("75lite").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 75Mb Lite!"
+                    document.getElementById("75SU").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 75Mb SuperUp!"
+                    document.getElementById("100lite").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 100Mb Lite!"
+                    document.getElementById("100SU").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Eu tenho interesse em contratar o plano 100Mb SuperUp!"
+                    document.getElementById("want").href="https://web.whatsapp.com/send?phone=5563992068611&amp;text=Quero%20saber%20dos%20Planos%20de%20Internet!"
+                }
+            }
+        </script>
+
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQWEWcM0naS03olqqa467uQ55MRXaAc5o&callback=initializeMap"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
